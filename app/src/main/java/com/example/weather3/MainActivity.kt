@@ -7,6 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
@@ -72,6 +73,7 @@ class MainActivity : ComponentActivity() {
                     )
 
                 Column{
+
                 MainCard(currentDay, onClickSync = {
                     getData("London", this@MainActivity, daysList, currentDay)
                 }, onClickSearch = {
